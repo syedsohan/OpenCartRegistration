@@ -79,7 +79,7 @@ You can customize the script by editing the following variables in the code:
 * `url`: The URL of the registration page.
 * `wait_timeout`: Timeout for waiting for elements to become clickable (in seconds).
 * `short_wait`: A shorter timeout for specific actions (in seconds).
-* WebDriver path and setup (e.g., ChromeDriver setup).
+* WebDriver path and setup (e.g., ChromeDriver setup. You can use other browsers as well).
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
