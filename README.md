@@ -61,7 +61,6 @@ Before using this automation script, you need to have the following:
     "last_name": "Doe",
     "email": "john.doe@example.com",
     "password": "SecurePassword123",
-    "newsletter_option": "Yes",  # "Yes" or "No"
     }
     ```
 
