@@ -24,6 +24,9 @@ It includes dynamic waits, error handling, and detailed logging for reliable and
 
 ## Prerequisites
 
+> [!IMPORTANT]  
+> Starting with Selenium 4, you do not need to install the WebDriver separately. The Selenium library will automatically download and use the appropriate WebDriver for your chosen browser.
+
 Before using this automation script, you need to have the following:
 
 - Python 3.x installed (https://www.python.org/downloads/)
