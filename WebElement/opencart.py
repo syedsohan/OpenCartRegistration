@@ -3,12 +3,12 @@ import logging  # For debugging
 import time  # For adding delays
 from selenium import webdriver  # For initializing a web browser
 from selenium.webdriver.common.by import By  # For locating web elements
+from selenium.webdriver.support.ui import WebDriverWait  # For waiting on page load
 
 # Set configuration options
 url = "https://demo.opencart.com/index.php?route=account/register&language=en-gb"
-wait_timeout = 10
-short_wait = 2
-
+wait_timeout = 20
+short_wait = 5  # seconds
 # Initialize the webdriver (using Chrome)
 driver = webdriver.Chrome()
 
