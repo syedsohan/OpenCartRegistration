@@ -38,6 +38,7 @@ try:
     driver.execute_script(
         "window.scrollTo(0, document.body.scrollHeight)"
     )  # Scroll down to the page until the continue button is visible
+    time.sleep(short_wait)
     driver.find_element(By.NAME, "password").send_keys(registration_data["password"])
     time.sleep(short_wait)
 
