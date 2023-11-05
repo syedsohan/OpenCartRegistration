@@ -18,6 +18,7 @@ driver.maximize_window()
 try:
     # Open the website
     driver.get(url)
+    driver.implicitly_wait(10)  # seconds
 
     # Test data for registration form
     registration_data = {
@@ -34,6 +35,9 @@ try:
     time.sleep(short_wait)
     driver.find_element(By.NAME, "email").send_keys(registration_data["email"])
     time.sleep(short_wait)
+    driver.execute_script(
+        "window.scrollTo(0, document.body.scrollHeight)"
+    )  # Scroll down to the page until the continue button is visible
     driver.find_element(By.NAME, "password").send_keys(registration_data["password"])
     time.sleep(short_wait)
 
@@ -58,7 +62,7 @@ try:
     continue_button.click()
     time.sleep(short_wait)
 
-    # # Validate the confirmation message
+    # Validate the confirmation message
     print("Test was successful!") if driver.find_element(
         By.XPATH, "/html//form[@id='form-register']//button[@type='submit']"
     ).is_enabled() else "Test failed."
